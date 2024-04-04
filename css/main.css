@@ -109,20 +109,18 @@ a {
 }
 
 .item {
-  border-radius: 8px 0px 0px 0px;
+  border-radius: 8px;
   opacity: 60%;
   background-color: #FFF;
   color: #272727;
   ;
 }
 
- .pipa {
+.about-us-2__wrapper {
   background-image: url("/img/Бэкнювс.png");
-  width: 100%;
-  height: 682px;
   background-repeat: no-repeat;
-  background-size: 100% 100%;
-} 
+  background-size: cover;
+}
 
 .contacts-link {
   max-width: 806px;
@@ -180,5 +178,4 @@ color: #FFF;
   font-weight: 700;
   line-height: 24.38px;
   text-align: left;
-
 }
