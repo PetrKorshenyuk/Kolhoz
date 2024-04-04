@@ -1,0 +1,184 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+div {
+  display: block;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  padding: 0;
+  background-color: #F6F6F6;
+}
+
+.header, .footer {
+  background-color: #454444;
+  color: #fff
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.telephone_text {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24.54px;
+  text-align: left;
+}
+
+.address_text {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19.63px;
+  text-align: left;
+}
+
+.container-fluid{
+  padding: 0;
+}
+
+.navbar {
+  background-color: #28A922;
+}
+
+.nav-link {
+  color: #fff
+}
+
+.modal__btn{
+  background-color: #FFCC00;
+  border: none;
+}
+
+.modal__btn:hover {
+  background-color: #454444;
+}
+
+.modal__btn:active {
+  background-color: #454444;
+}
+
+.modal__link {
+  text-align: center;
+  margin: 6px 0;
+}
+
+.modal-content {
+  color: #FFF;
+  background-color: #454444;
+}
+
+.header__nav-link {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 21.94px;
+  text-align: left;
+}
+
+
+.img_benefit {
+  width: 76px;
+  height: 76px;
+  transform: translateY(-35%);
+}
+
+.card-title {
+  padding: 0;
+  font-family: "Montserrat";
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 19.63px;
+}
+
+.card {
+  border: none;
+}
+
+.card:hover {
+  box-shadow: 0px 2px 10px 0px #28A922;
+  transition: all .1s linear;
+}
+
+.data-form {
+  background-color: #FFF;
+  border: #454444 1px solid;
+}
+
+.item {
+  border-radius: 8px 0px 0px 0px;
+  opacity: 60%;
+  background-color: #FFF;
+  color: #272727;
+  ;
+}
+
+ .pipa {
+  background-image: url("/img/Бэкнювс.png");
+  width: 100%;
+  height: 682px;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+} 
+
+.contacts-link {
+  max-width: 806px;
+  width: 35%;
+  height: 99%;
+  padding: 39px 20px;
+  background-color: #434142;
+  color: #272727 !important;
+  top: 49%;
+  left: 17%;
+  transform: translate(-50%, -50%);
+}
+
+.contacts__card-title {
+font-family: "Montserrat";
+font-size: 40px;
+font-weight: 700;
+line-height: 49.07px;
+text-align: left;
+color: #FFF;
+}
+
+.contacts__card-cont {
+  font-family: "Montserrat";
+font-size: 16px;
+font-weight: 400;
+line-height: 19.5px;
+text-align: left;
+color: #FFF;
+}
+
+.contacts__card-link {
+  font-family: "Montserrat";
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24.38px;
+  text-align: left;
+
+}
+
+.footer__list {
+  -moz-column-width: 50%;
+  column-width: 50%;
+  -moz-column-count: 2;
+  column-count: 2;
+  -moz-column-gap: 10%;
+  column-gap: 10%;
+  padding: 0;
+  list-style-type: none;
+}
+
+.footer__cont-link {
+  font-family: 'Montserrat';
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24.38px;
+  text-align: left;
+
+}
