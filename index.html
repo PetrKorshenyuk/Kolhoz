@@ -67,7 +67,7 @@
                     <p class="telephone_text">+7 (953) 734-02-27</p>
                   </a>
                 </div>
-                <div class="telegram_and_vk d-flex justify-content-xl-end">
+                <div class="telegram_and_vk d-flex justify-content-end">
                   <a class="telegram_link" href="">
                     <img src="img/telegram 3.svg" alt="">
                   </a>
@@ -138,16 +138,15 @@
                             <label for="online__telephone"
                               class="col-sm-2 col-form-label col-form-label-sm">Телефон</label>
                             <div class="col-sm-10">
-                              <input class="form-control form-control-sm" id="online__telephone" name="phone" type="tel"
+                              <input class="form-control form-control-sm" id="online__telephone" name="phone" type="text"
                                 maxlength="50" autofocus="autofocus" required="required"
-                                pattern="\+7\s?[\(]{0,1}9[0-9]{2}[\)]{0,1}\s?\d{3}[-]{0,1}\d{2}[-]{0,1}\d{2}"
                                 placeholder="+7(___)___-__-__">
                             </div>
                           </div>
                           <div class="row mb-3">
                             <label for="Name" class="col-sm-2 col-form-label col-form-label-sm">ФИО</label>
                             <div class="col-sm-10">
-                              <input class="form-control form-control-sm" id="online__telephone" name="phone" type="tel"
+                              <input class="form-control form-control-sm" id="Name" name="Subname" type="text"
                                 maxlength="50" autofocus="autofocus" required="required"
                                 placeholder="Иванов Иван Иванович">
                             </div>
@@ -157,7 +156,7 @@
                           <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
                             Отмена
                           </button>
-                          <button type="submit" class="btn btn-primary">Отправить</button>
+                          <button type="submit" class="btn btn__form">Отправить</button>
                         </div>
                       </div>
                     </div>
@@ -181,7 +180,7 @@
   </header>
   <main>
     <section class="intro">
-      <div id="carouselExampleSlidesOnly" class="carousel slide z-1 position-relative d-sm-none d-md-block"
+      <div id="carouselExampleSlidesOnly" class="carousel slide z-1 position-relative d-none d-md-block"
         data-bs-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active">
@@ -195,39 +194,28 @@
           </div>
         </div>
       </div>
-      <div class="container intro__form position-absolute">
-        <form class="data-form row row-cols-lg-auto g-3 align-items-center z-2">
-          <div class="col-lg-3 col-12">
-            <label class="visually-hidden" for="inlineFormInputGroupUsername">Имя пользователя</label>
-            <div class="input-group">
-              <div class="input-group-text">@</div>
-              <input type="text" class="form-control" id="inlineFormInputGroupUsername" placeholder="Имя пользователя">
+      <div class="intro__form container mt-4 mt-md-0">
+        <div class=" col position-relative mx-auto">
+          <form class="data-form__wrapper d-flex row row-cols-lg-auto g-3 align-items-center mx-auto px-2 py-4">
+
+            <div class="col-lg-3 col-12 ps-4">
+              <h3><b>Бронирование</b></h1>
+              <h4>Выберите дату</h4>
             </div>
-          </div>
 
-          <div class="col-lg-3 col-12">
-            <label class="visually-hidden" for="inlineFormSelectPref">Предпочтение</label>
-            <select class="form-select" id="inlineFormSelectPref">
-              <option selected>Выберите...</option>
-              <option value="1">Один</option>
-              <option value="2">Два</option>
-              <option value="3">Три</option>
-            </select>
-          </div>
-
-          <div class="col-lg-3 col-12">
-            <div class="form-check">
-              <input class="form-check-input" type="checkbox" id="inlineFormCheck">
-              <label class="form-check-label" for="inlineFormCheck">
-                Запомнить меня
-              </label>
+            <div class="col-lg-3 col-12">
+              <input class="h-100 w-100 p-3 fw-bold" type="date" id="date-option-out" name="trip-start" value="2024-01-14" required="">
             </div>
-          </div>
 
-          <div class="col-lg-3 col-12">
-            <button type="submit" class="btn btn-primary">Отправить</button>
-          </div>
-        </form>
+            <div class="col-lg-3 col-12">
+              <input class="h-100 w-100 p-3 fw-bold" type="date" id="date-option-out" name="trip-start" value="2024-01-14" required="">
+            </div>
+
+            <div class="col-lg-3 col-12 d-flex justify-content-center">
+              <button type="submit" class="btn btn-lg btn__form fs-5">Забронировать</button>
+            </div>
+          </form>
+        </div>
       </div>
     </section>
     <section class="about-us">
@@ -361,32 +349,38 @@
                     </p>
                   </div>
                 </div>
-                <div class="item col-3 my-5">
-                  <img src="/img/barnhouse 1.svg" class="mx-auto d-block" alt="">
-                  <p class="text-center">
-                    Баня с балконом над водой и банным чаном на дровах.
-
-                    Мангальные площадки для каждой летней беседки. Комплексная организация любых мероприятий
-                    под ключ (приглашения артистов,ведущих,певцов,выездные регистрации,декор и флористика,тематические
-                    тимбилдинги,трансфер и проч).
-
-                    Гибкая клиентоориентированая комплексная подборка всего необходимого.
-
-                  </p>
+                <div class="item col-md-3 my-5 d-flex flex-column gap-3">
+                  <div class="about-us__card-wrapper p-3">
+                    <img src="/img/barnhouse 1.svg" class="mx-auto mb-1 d-block" alt="">
+                    <p class="text-center">
+                      Баня с балконом над водой и банным чаном на дровах.
+                    </p>
+                    <p class="text-center">
+                      Мангальные площадки для каждой летней беседки. Комплексная организация любых мероприятий
+                      под ключ (приглашения артистов,ведущих,певцов,выездные регистрации,декор и флористика,тематические
+                      тимбилдинги,трансфер и проч).
+                    </p>
+                    <p class="text-center">
+                      Гибкая клиентоориентированая комплексная подборка всего необходимого.
+                    </p>
+                  </div>
                 </div>
-                <div class="item col-3 my-5">
-                  <img src="/img/eat-healthy 1.svg" class="mx-auto d-block" alt="">
-                  <p class="text-center">
-                    Разработка любого индивидуального меню, тематические кулинарные станции, анимации и вообще в целом
-                    все, что связано с едой на этой площадке-это лучшее место в Рязани и области.
-
-                    Многофункциональный зал трансформер под разный формат и задачи. Кулинарная школа (возможность не
-                    посредственно познакомиться с новейшим оборудованием нашей кухни,и увидеть что как и из чего
-                    готовиться еда) .
-
-                    За территорией луга, поля для разных целей и задач (погонять на мотиках,квадриках и т.д)
-
-                  </p>
+                <div class="item col-md-3 my-5 d-flex flex-column gap-3">
+                  <div class="about-us__card-wrapper p-3">
+                    <img src="/img/eat-healthy 1.svg" class="mx-auto d-block" alt="">
+                    <p class="text-center">
+                      Разработка любого индивидуального меню, тематические кулинарные станции, анимации и вообще в целом
+                      все, что связано с едой на этой площадке-это лучшее место в Рязани и области.
+                    </p>
+                    <p class="text-center">
+                      Многофункциональный зал трансформер под разный формат и задачи. Кулинарная школа (возможность не
+                      посредственно познакомиться с новейшим оборудованием нашей кухни,и увидеть что как и из чего
+                      готовиться еда) .
+                    </p>
+                    <p class="text-center">
+                      За территорией луга, поля для разных целей и задач (погонять на мотиках,квадриках и т.д.
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -405,7 +399,7 @@
           </div>
         </div>
         <div class="d-flex row justify-content-evenly">
-          <div class="card px-0" style="width: 25rem;">
+          <div class="card px-0 mb-3" style="width: 25rem;">
             <img src="/img/news_1.png" class="card-img-top w-100" alt="...">
             <div class="card-body">
               <div class="data pad">10.10.2020</div>
@@ -416,7 +410,7 @@
               <a href="#" class="stretched-link pad link-success">Подробнее</a>
             </div>
           </div>
-          <div class="card px-0" style="width: 25rem;">
+          <div class="card px-0  mb-3" style="width: 25rem;">
             <img src="/img/news_2.png" class="card-img-top w-100" alt="...">
             <div class="card-body">
               <div class="data pad">10.10.2020</div>
@@ -427,7 +421,7 @@
               <a href="#" class="stretched-link pad link-success">Подробнее</a>
             </div>
           </div>
-          <div class="card px-0" style="width: 25rem;">
+          <div class="card px-0 mb-3" style="width: 25rem;">
             <img src="/img/news_3.png" class="card-img-top w-100" alt="...">
             <div class="card-body">
               <div class="data pad">10.10.2020</div>
@@ -446,7 +440,7 @@
         <iframe
           src="https://yandex.ru/map-widget/v1/?ll=39.796418%2C54.518565&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgg1MzAyNzIyNBKCAdCg0L7RgdGB0LjRjywg0KDRj9C30LDQvdGB0LrQuNC5INGA0LDQudC-0L0sINCi0YPRgNC70LDRgtC-0LLRgdC60L7QtSDRgdC10LvRjNGB0LrQvtC1INC_0L7RgdC10LvQtdC90LjQtSwg0YHQtdC70L4g0KDQtdGC0LrQuNC90L4iCg2zKR9CFVYWWkI%2C&z=14.9"
           width="100%" height="585" frameborder="0"></iframe>
-        <div class="contacts-link col-4 position-absolute">
+        <div class="contacts-link col-6 col-lg-4 position-absolute d-none d-sm-block">
           <div class="contacts__card-body card-body">
             <h1 class="contacts__card-title card-title">Контакты</h1>
             <div class="contacts__card-contbox">
@@ -526,6 +520,15 @@
   </footer>
   <!-- Bootstrap JavaScript Libraries -->
   <script src="js/bootstrap.bundle.js"></script>
+  <script src="https://unpkg.com/imask"></script>
+  <script>
+    const element = document.getElementById('online__telephone');
+    const maskOptions = {
+      mask: '+{7}(000)000-00-00',
+      lazy: false
+    };
+    const mask = IMask(element, maskOptions);
+  </script>
 </body>
 
 </html>

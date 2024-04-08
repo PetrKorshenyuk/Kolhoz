@@ -23,6 +23,10 @@ a {
   color: #fff;
 }
 
+a:hover {
+  color: #28A922;
+}
+
 .telephone_text {
   font-size: 20px;
   font-weight: 700;
@@ -81,9 +85,9 @@ a {
 
 
 .img_benefit {
-  width: 76px;
-  height: 76px;
-  transform: translateY(-35%);
+  width: 70px;
+  height: 70px;
+  transform: translateY(-25%);
 }
 
 .card-title {
@@ -103,9 +107,16 @@ a {
   transition: all .1s linear;
 }
 
-.data-form {
+.data-form__wrapper {
   background-color: #FFF;
   border: #454444 1px solid;
+  border-radius: 8px;
+}
+
+@media(min-width: 768px) {
+  .data-form__wrapper {
+    transform: translateY(-10%);
+  }
 }
 
 .item {
@@ -124,14 +135,19 @@ a {
 
 .contacts-link {
   max-width: 806px;
-  width: 35%;
   height: 99%;
   padding: 39px 20px;
   background-color: #434142;
   color: #272727 !important;
   top: 49%;
-  left: 17%;
+  left:17%;
   transform: translate(-50%, -50%);
+}
+
+@media (max-width: 992px) {
+  .contacts-link {
+    left: 25%
+  }
 }
 
 .contacts__card-title {
@@ -178,4 +194,120 @@ color: #FFF;
   font-weight: 700;
   line-height: 24.38px;
   text-align: left;
+}
+
+input[type=date] {
+  border:#28A922  2px solid;
+}
+
+.btn__form {
+  background-color: #28A922;
+  color: #FFF;
+
+}
+
+.header::before {
+  content: "";
+  background-image: url(/img/listok1.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  position: absolute;
+  right: 0;
+
+  width: 175px;
+  height: 150px;
+}
+
+
+.intro::after {
+  content: "";
+  background-image: url(/img/listok2.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  position: absolute;
+  left: -5%;
+
+  width: 260px;
+  height: 205px;
+
+  rotate: 50deg;
+}
+
+.about-us::before {
+  content: "";
+  background-image: url(/img/listok3.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  position: absolute;
+  right: 12.5%;
+  
+
+  width: 175px;
+  height: 150px;
+}
+
+.about-us::after {
+  content: "";
+  background-image: url(/img/listok4.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  position: absolute;
+  left: 2%;
+
+  transform: translateY(-800px);
+
+  width: 175px;
+  height: 150px;
+}
+
+.news::before {
+  content: "";
+  background-image: url(/img/listok5.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  position: absolute;
+  right: 3%;
+
+  transform: translateY(-252px);
+
+  width: 258px;
+  height: 205px;
+}
+
+.contacts::after {
+  content: "";
+  background-image: url(/img/listok6.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  transform: translateY(-200px);
+
+  position: absolute;
+  left: 0%;
+
+  width: 302px;
+  height: 267px;
+}
+
+@media (max-width: 1600px) {
+  .header::before, .news::before{
+    display: none;
+  }
+}
+
+@media (max-width: 1250px) {
+  .about-us::after, .intro::after{
+    display: none;
+  }
+}
+
+@media (max-width: 650px) {
+  .contacts::after, .about-us::before{
+    display: none;
+  }
 }
