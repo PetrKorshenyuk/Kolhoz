@@ -133,15 +133,12 @@ a:hover {
   background-size: cover;
 }
 
-.contacts-link {
+.contacts-link, .contacts-link_sm {
   max-width: 806px;
   height: 99%;
   padding: 39px 20px;
   background-color: #434142;
   color: #272727 !important;
-  top: 49%;
-  left:17%;
-  transform: translate(-50%, -50%);
 }
 
 @media (max-width: 992px) {
@@ -310,4 +307,10 @@ input[type=date] {
   .contacts::after, .about-us::before{
     display: none;
   }
+}
+
+.contacts-link {
+  top: 49%;
+  left:17%;
+  transform: translate(-50%, -50%);
 }
